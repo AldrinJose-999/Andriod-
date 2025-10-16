@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ProfileMy</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="welcome">Welcome</string>
+    <string name="this_is_your_home_page">This is your Home Page.</string>
+
+    <string-array name="FruitsName">
+        <item>Apple</item>
+        <item>Bananas</item>
+        <item>Cherry</item>
+        <item>Avocados</item>
+        <item>Plum</item>
+        <item>Fig</item>
+        <item>Guava</item>
+        <item>Jackfruit</item>
+        <item>Water Melon</item>
+        <item>Orange</item>
+        <item>Mango</item>
+        <item>Olive</item>
+        <item>Tomato</item>
+        <item>Elderberry</item>
+        <item>Grapes</item>
+        <item>Honeydew</item>
+        <item>Kiwi</item>
+    </string-array>
+
+</resources>
