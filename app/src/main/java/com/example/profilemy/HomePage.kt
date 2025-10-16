@@ -1,8 +1,12 @@
 package com.example.profilemy
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Adapter
 import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ListView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -28,12 +32,23 @@ class HomePage : AppCompatActivity() {
         // Create ArrayAdapter
         val adapter = ArrayAdapter(
             this,
-            android.R.layout.simple_list_item_1,
+            R.layout.list_item,
+            R.id.itemText,
             fruits
         )
 
         // Set adapter to ListView
         listView.adapter = adapter
+
+
+        val login : ImageButton =findViewById(R.id.imageButton)// Initialising the UI Component ie Image button
+
+
+        login.setOnClickListener {
+            val intent = Intent(applicationContext, ImagePage::class.java)  // component Class/ Name  where activity to be linked
+            intent.putExtra("UserName", username)   // pass the data/value to another activity which is linked(homepage)
+            startActivity(intent)  // to start teh intent
+        }
     }
 
 

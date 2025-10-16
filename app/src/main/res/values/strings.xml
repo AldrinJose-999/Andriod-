@@ -5,6 +5,8 @@
     <string name="login">Log In</string>
     <string name="welcome">Welcome</string>
     <string name="this_is_your_home_page">This is your Home Page.</string>
+    <string name="image_page">Image Page</string>
+    <string name="todo">TODO</string>
 
     <string-array name="FruitsName">
         <item>Apple</item>

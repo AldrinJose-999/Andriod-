@@ -44,10 +44,20 @@
     <ListView
         android:id="@+id/list_item"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="240dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
         android:entries="@array/FruitsName"
-        tools:listitem="@android:layout/simple_list_item_1" />
+        tools:listitem="@layout/list_item" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c1"
+        android:contentDescription="@string/image_page"
+        android:padding="12dp"/>
+
 
 
 </LinearLayout>
