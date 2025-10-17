@@ -8,6 +8,7 @@
     android:gravity="center"
     android:background="#FAFAFA">
 
+
     <!-- Welcome Text -->
     <TextView
         android:id="@+id/tvWelcome"

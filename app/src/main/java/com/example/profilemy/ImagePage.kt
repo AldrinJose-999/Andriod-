@@ -39,7 +39,6 @@ class ImagePage : AppCompatActivity() {
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .into(imageView2)
 
-
         // 3️⃣ Image from local file
 
         val imag : String = "/storage/emulated/0/Download/images.jpeg"

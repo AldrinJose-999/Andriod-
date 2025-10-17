@@ -37,6 +37,7 @@ class HomePage : AppCompatActivity() {
             fruits
         )
 
+
         // Set adapter to ListView
         listView.adapter = adapter
 
