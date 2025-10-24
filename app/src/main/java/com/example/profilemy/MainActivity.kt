@@ -9,14 +9,15 @@ import androidx.activity.ComponentActivity
 
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var editText: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
-
         val login : Button =findViewById(R.id.loginButton)// Initialising the UI Component ie log in button
-        val editText : EditText = findViewById(R.id.usernameInput) // initialised the edittext ui
+        editText = findViewById(R.id.usernameInput) // initialised the edittext ui
 
         login.setOnClickListener {
 
@@ -25,8 +26,33 @@ class MainActivity : ComponentActivity() {
             intent.putExtra("UserName", username)   // pass the data/value to another activity which is linked(homepage)
             startActivity(intent)  // to start teh intent
         }
+    }
 
+    override fun onResume() {
+        super.onResume()
+
+        // Retrieving stored data from SharedPreferences
+        val sharedPreferences = getSharedPreferences("UserPreferences", MODE_PRIVATE)
+        val savedName = sharedPreferences.getString("user_name", "")
+
+        // Populating EditText fields with stored data
+        editText.setText(savedName)
 
     }
+
+    override fun onPause() {
+        super.onPause()
+
+        // Storing data in SharedPreferences
+        val sharedPreferences = getSharedPreferences("UserPreferences", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        // Retrieving user input and saving it
+        editor.putString("user_name", editText.text.toString())
+        editor.apply()
+    }
+
+
+
 }
 
