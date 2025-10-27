@@ -52,7 +52,6 @@ class NewUser : AppCompatActivity() {
                     dataList.toMutableList()
                 )
 
-
                 dbListView.adapter = adapter
 
             } else {
