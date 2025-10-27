@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="#F9FAFB"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_database"
+        android:textColor="#222222"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_and_view_users_easily"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/newUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_user_name"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+                android:layout_marginBottom="20dp"/>
+
+    <!-- Button Group -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="25dp">
+
+        <Button
+            android:id="@+id/AddDB"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:backgroundTint="#007AFF"
+            android:textColor="#FFFFFF"
+            android:text="@string/add_user"
+            android:fontFamily="sans-serif-medium"/>
+
+        <Button
+            android:id="@+id/ReadDB"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:backgroundTint="#00C851"
+            android:textColor="#FFFFFF"
+            android:text="@string/read_db"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- ListView -->
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listdb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#F1F1F1"
+        android:dividerHeight="1dp"
+        android:padding="10dp"
+        tools:listitem="@layout/list_item" />
+
+</LinearLayout>

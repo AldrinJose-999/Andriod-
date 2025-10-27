@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
     <LinearLayout
         android:orientation="vertical"
         android:padding="24dp"
@@ -49,14 +47,30 @@
             android:drawableStart="@android:drawable/ic_lock_idle_lock"
             android:padding="12dp"
             android:layout_marginBottom="24dp"/>
-
-        <!-- Login Button -->
-        <Button
-            android:id="@+id/loginButton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:padding="12dp"/>
+            android:orientation="horizontal"
+            android:gravity="center">
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="12dp"
+                android:text="@string/login" />
+            <!-- New User-->
+            <Button
+                android:id="@+id/NewButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/new_user" />
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
 </LinearLayout>

@@ -19,6 +19,13 @@ class MainActivity : ComponentActivity() {
         val login : Button =findViewById(R.id.loginButton)// Initialising the UI Component ie log in button
         editText = findViewById(R.id.usernameInput) // initialised the edittext ui
 
+        val newUser : Button =findViewById(R.id.NewButton)// Initialising the UI Component ie log in button
+
+        newUser.setOnClickListener {
+            val intent = Intent(applicationContext, NewUser::class.java)  // component Class/ Name  where activity to be linked
+            startActivity(intent)  // to start teh intent
+        }
+
         login.setOnClickListener {
 
             val username = editText.text.toString()  // to get the value from the ui into string

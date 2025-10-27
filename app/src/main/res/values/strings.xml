@@ -7,6 +7,15 @@
     <string name="this_is_your_home_page">This is your Home Page.</string>
     <string name="image_page">Image Page</string>
     <string name="todo">TODO</string>
+    <string name="new_user">New User</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="add_course">Add Course</string>
+    <string name="add_db">Add DB</string>
+    <string name="read_db">Read DB</string>
+    <string name="user_database">User Database</string>
+    <string name="add_and_view_users_easily">Add and view users easily</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="add_user">Add User</string>
 
     <string-array name="FruitsName">
         <item>Apple</item>
